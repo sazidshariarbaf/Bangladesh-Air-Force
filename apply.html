@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLY</title>
+    <link rel = "icon" href ="image/1200px-Bangladesh_Air_Force_emblem.svg.png" type = "image/x-icon">
+
+    <!----------------------------->
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+    <!--------------Fonts--------------->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,700&display=swap" rel="stylesheet">
+    <!--------------Bootstrap----------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+    <!--------------Stylesheet---------->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" integrity="sha512-dLc41mqdowYwgVPGg7/h/HhL3zQWZJLrTnbqAVwyvfHwHF+Xpsfu5UWcE7BOjcY/f/0gV55oCP7UZ+CJar5Lqg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>
+                <li>
+                    <a href="coas.html">COAS</a>
+                </li>
+                <li>
+                    <a href="joinbaf.html">Join BAF</a>
+                </li>
+                <li class="logo">
+                    <a href="index.html"><img src="image/1200px-Bangladesh_Air_Force_emblem.svg.png" alt="" class="white" width="100" height="100"> <img src="image/1200px-Bangladesh_Air_Force_emblem.svg.png" alt="" class="black" width="100" height="100"> </a>
+                </li>
+                <li>
+                    <a href="aircrafts.html">Aircrafts</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="login.html">Log in</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contact</a>
+                </li>
+            </ul>
+            <a class="nav-icon" href="javascript:void(0)"> <span></span><span></span><span></span></a>
+        </nav>
+    </header>
+<section class="about-us  apply-section">
+    <div class="container main-apply">
+       <div class="row">
+          <div class="col-sm-12">
+             <h2 class="section-title apply-title"></h2>
+             <div class="section-subtitle apply-description">
+             </div>
+             <hr>
+             <div class=" row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                   
+                   <form class="form-horizontal" action="https://joinairforce.baf.mil.bd/apply" method="POST" enctype="multipart/form-data" id="myform">
+                      <input type="hidden" name="_token" value="n8YSITtKYaNy89KH5A7ZHeIr7FY4vup7BFP0hLIY">                     <fieldset id="job_information" class="">
+                         <div class="form-group">
+                             <div class="row">
+                                 <div class="col-md-3">
+                                     <label>Application For</label>
+                                 </div> 
+                                 <div class="col-md-9">
+                                     <select class="form-control post_id" name="post_id" id="post_id">
+                                       <option value="">Application For</option>
+                                        <option value="">Officer Cadet</option>
+                                        <option value="">Airmen</option>
+                                        <option value="">MODC</option>
+                                     </select>
+                                 </div>
+                             </div>
+                         </div>
+                         <div id="content">
+                         </div>
+                         
+                         <div class="form-group">
+                             <div class="row">
+                                 <div class="col-md-3">
+                                     <label> Branch/Trade</label>
+                                 </div> 
+                                 <div class="col-md-9">
+                                     <select class="form-control branch_id" name="branch_id" id="branch_id">   
+                                     <option value=""> Branch/Trade </option>
+                                                               
+                                    </select>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <div class="col-md-3 ">
+                                     <label>Division</label>
+                                 </div> 
+                                 <div class="col-md-9">
+                                    <select class="form-control " name="division" id="division">
+                                       <option value="">Select Divison</option>
+                                                                             <option value="1">Dhaka</option>
+                                                                             <option value="2">Barishal</option>
+                                                                             <option value="3">Rangpur</option>
+                                                                             <option value="4">Rajshahi</option>
+                                                                             <option value="5">Mymensingh</option>
+                                                                             <option value="6">Khulna</option>
+                                                                             <option value="7">Chattogram</option>
+                                                                             <option value="8">Sylhet</option>
+                                    </select>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <div class="col-md-3 ">
+                                     <label>District</label>
+                                 </div> 
+                                 <div class="col-md-9">
+                                     <select class="form-control " name="district" id="district">
+                                       <option value=""> Select District </option>
+                                     </select>
+                                 </div>
+                             </div>
+                         </div>
+                      </fieldset>
+                      <fieldset id="personal_information" class="">
+                         <div class="form-group">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Full Name</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                         <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         
+                         <div class="form-group">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Mobile No</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                         <div class="row">
+                                           <div class="col-3">
+                                              <input type="text" class="form-control " disabled="" value="+88">
+                                           </div>
+                                           <div class="col-9">
+                                              <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile">
+                                           </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         
+                         <div class="form-group">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Email Adderess (If Available)</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                         <input type="text" class="form-control" id="email" name="email" placeholder="Email (Optional)">
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         
+                         <div class="form-group">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Date of Birth</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                           <div class="col-4">
+                                              <select class="form-control  text-col" name="birth_year" id="birth_year">
+                                                 <option value="">Year</option>
+                                                 <option value="1986">1986</option>
+                                                 <option value="1987">1987</option>
+                                                 <option value="1988">1988</option>
+                                                 <option value="1989">1989</option>
+                                                 <option value="1990">1990</option>
+                                                 <option value="1991">1991</option>
+                                                 <option value="1992">1992</option>
+                                                 <option value="1993">1993</option>
+                                                 <option value="1994">1994</option>
+                                                 <option value="1995">1995</option>
+                                                 <option value="1996">1996</option>
+                                                 <option value="1997">1997</option>
+                                                 <option value="1998">1998</option>
+                                                 <option value="1999">1999</option>
+                                                 <option value="2000">2000</option>
+                                                 <option value="2001">2001</option>
+                                                 <option value="2002">2002</option>
+                                                 <option value="2003">2003</option>
+                                                 <option value="2004">2004</option>
+                                                 <option value="2005">2005</option>
+                                              </select>
+                                           </div>
+                                           <div class="col-4">
+                                              <select class="form-control  text-col" name="birth_month" id="birth_month">
+                                                 <option value="">Month</option>
+                                                 <option value="01">01</option>
+                                                 <option value="02">02</option>
+                                                 <option value="03">03</option>
+                                                 <option value="04">04</option>
+                                                 <option value="05">05</option>
+                                                 <option value="06">06</option>
+                                                 <option value="07">07</option>
+                                                 <option value="08">08</option>
+                                                 <option value="09">09</option>
+                                                 <option value="10">10</option>
+                                                 <option value="11">11</option>
+                                                 <option value="12">12</option>
+                                              </select>
+                                           </div>
+                                           <div class="col-4">
+                                              <select class="form-control  text-col" name="birth_day" id="birth_day">
+                                                 <option value="">Day</option>
+                                                 <option value="01">01</option>
+                                                 <option value="02">02</option>
+                                                 <option value="03">03</option>
+                                                 <option value="04">04</option>
+                                                 <option value="05">05</option>
+                                                 <option value="06">06</option>
+                                                 <option value="07">07</option>
+                                                 <option value="08">08</option>
+                                                 <option value="09">09</option>
+                                                 <option value="10">10</option>
+                                                 <option value="11">11</option>
+                                                 <option value="12">12</option>
+                                                 <option value="13">13</option>
+                                                 <option value="14">14</option>
+                                                 <option value="15">15</option>
+                                                 <option value="16">16</option>
+                                                 <option value="17">17</option>
+                                                 <option value="18">18</option>
+                                                 <option value="19">19</option>
+                                                 <option value="20">20</option>
+                                                 <option value="21">21</option>
+                                                 <option value="22">22</option>
+                                                 <option value="23">23</option>
+                                                 <option value="24">24</option>
+                                                 <option value="25">25</option>
+                                                 <option value="26">26</option>
+                                                 <option value="27">27</option>
+                                                 <option value="28">28</option>
+                                                 <option value="29">29</option>
+                                                 <option value="30">30</option>
+                                                 <option value="31">31</option>
+                                              </select>
+                                           </div>
+                                        </div>
+                                        <p class="age_meg help-block"></p>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         
+                         
+                         <div class="form-group">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Gender</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                         <select class="form-control " name="gender" id="gender">
+                                           <option value="">Select Gender</option>
+                                           <option value="Male">Male</option>
+                                           <option value="Female">Female</option>
+                                         </select>     
+                                         <span class="text-danger" id="genderMessage"></span>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                      </fieldset>
+                      
+                      <fieldset id="payment_information" class="">
+                         <div class="text-right">
+                            <input class="btn btn-primary" type="submit" value="SUBMIT NOW">
+                         </a></div><a>
+                      </a></fieldset><a>
+                   
+                </a></form></div><a>
+                <div class="col-lg-3"></div>
+             </a></div><a>
+             <br><br>
+          </a></div><a>
+       </a></div><a>
+    </a></div><a>
+    <!-- Button trigger modal -->
+ </a></section>
+
+ <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js" integrity="sha512-N2c8GRpFPskDz66HQotXf2CPslRcilc86zA+ZARTqxx94w0TkT2YdKB2z8z4yAfAqdkLhjlH6KNHQ2Fg8rnSnQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js" integrity="sha512-no2/KDsCWSGu0LVyWVdwha859xFOn1K8oLPIi2O6gxIv5fQ704L2pQh5H8X4PpTEzjGD58/M7TYwdf8LWeSQKw==" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/ready.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+
+</body>
+</html>
